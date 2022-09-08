@@ -1,0 +1,122 @@
+ <section class="footer">
+
+    <div class="container" id="foot-cont">
+      <div class="row">
+        <div class="foot-col" id="inst">
+          <div class="foot-tit">
+            Download our app
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis.</p>
+          <img src="images/app-store.png" alt="">
+          <img src="images/play-store.png" alt="">
+        </div>
+        <div class="foot-col">
+          <img src="images/logo.png" alt="">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur.</p>
+        </div>
+        <div class="foot-col">
+          <div class="foot-tit">
+            useful links
+          </div>
+          <ul>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">History</a></li>
+          </ul>
+        </div>
+        <div class="foot-col">
+          <div class="foot-tit">
+            Follow us
+          </div>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">You tube</a></li>
+            <li><a href="#">Linked In</a></li>
+            <li><a href="#">Twiteer</a></li>
+          </ul>
+        </div>
+        <hr>
+        <h5 class="cpy">Copyright @ Karan Kumar All Right Reserved</h5>
+      </div>
+    </div>
+  </section>
+  .footer {
+   color: white;
+   background-color: #000;
+ }
+ .foot-col {
+  flex-basis: 20%;
+  /* border: 2px solid firebrick */
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.foot-col img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.foot-col ul {
+  list-style: none;
+}
+
+.foot-col ul li a {
+  color: white;
+  text-decoration: none;
+  transition: all .5s;
+}
+
+.foot-col ul li a:hover {
+  color: rgb(255, 69, 0);
+}
+
+.foot-col p {
+  font-size: 12px;
+  padding: 12px;
+  margin: 12px, 0px;
+
+}
+
+#inst img {
+  width: 48%;
+}
+
+#foot-cont {
+  width: 100%;
+}
+
+.foot-tit {
+  text-align: center;
+  font-weight: bold;
+  font-size: 19px;
+  text-transform: capitalize;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.foot-tit:hover,
+.cpy:hover {
+  color: rgba(255, 68, 0, 0.726);
+}
+
+.foot-col ul li {
+  margin-top: 8px;
+}
+
+hr {
+  color: silver;
+  /* border: 2px solid silver; */
+  width: 100%;
+}
+
+.cpy {
+  font-size: 12px;
+  color: silver;
+  font-weight: 100;
+  margin-bottom: 13px;
+  transition: all .5s;
+}  

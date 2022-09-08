@@ -1,0 +1,122 @@
+
+  <section class=" container test-container">
+    <h2>Testimonials</h2>
+    <div class="row test-row">
+      <div class="testcol">
+        <div class="content-test">
+          <div class="quote">&#8220</div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea iste illum est ad quisquam recusandae
+            reprehenderit neque debitis doloremque. Dolore eos vel expedita, reiciendis amet minima! Fugit quas incidunt
+            veniam!
+          </p>
+          <img src="images/user-1.png" alt="">
+          <div class="name">Sakshi</div>
+          <div class="stars product-star">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+      <div class="testcol">
+        <div class="quote">&#8220</div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea iste illum est ad quisquam recusandae
+          reprehenderit neque debitis doloremque. Dolore eos vel expedita, reiciendis amet minima! Fugit quas incidunt
+          veniam!
+        </p>
+        <img src="images/user-2.png" alt="">
+        <div class="name">Abhishek</div>
+        <div class="stars product-star">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-o" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="testcol">
+        <div class="quote">&ldquo;</div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea iste illum est ad quisquam recusandae
+          reprehenderit neque debitis doloremque. Dolore eos vel expedita, reiciendis amet minima! Fugit quas incidunt
+          veniam!
+        </p>
+        <img src="images/user-3.png" alt="">
+        <div class="name">Priyanka</div>
+        <div class="stars product-star">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-o" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  
+/* Testimonials  */
+.test-container {
+  margin-top: 14px;
+}
+
+.testcol {
+  flex-basis: 30%;
+  padding: 12px;
+  text-align: center;
+  border: 1px solid silver;
+  border-radius: 4px;
+  transition: all .8s;
+  box-shadow: 0 0 20px 0px #0000001a;
+  cursor: pointer;
+}
+
+.testcol p {
+  text-align: left;
+  color: #777;
+}
+
+.testcol:hover {
+  transform: translateY(-10px);
+}
+
+.testcol img {
+  width: 30%;
+  margin: 2px 0px;
+  border-radius: 50%;
+}
+
+.quote {
+  /* text-align: center; */
+  font-size: 59px;
+  font-weight: 900;
+  color: rgb(255, 69, 0);
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.btn {
+  color: white;
+  background-color: rgb(255, 69, 0);
+  padding: 12px;
+  text-align: center;
+  width: 30%;
+  border-radius: 9px;
+  margin: auto;
+  font-size: 19px;
+  cursor: pointer;
+  transition: all .57s;
+}
+
+.btn:hover {
+  opacity: .5;
+}

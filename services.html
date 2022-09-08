@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Study Zone/Services</title>
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="style.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav>
+ <div class="logo" id="logo">
+  <img src="logo.png" alt="">
+ </div>
+ <i class="fa fa-bars opt" aria-hidden="true" onclick="showNav()"></i>
+ <div class="right-nav" id="right">
+  <ul>
+  <i class="fa fa-times opt" aria-hidden="true" onclick="hideNav()"></i>
+   <li><a href="index.html" id="home">Home</a></li>
+   <li><a href="about.html">About</a></li>
+   <li><a href="millestone.html">Mile Stones </a></li>
+   <li><a href="services.html">Services</a></li>
+   <a href="#" class="btn">Login</a>
+   <a href="#" class="btn">Sign Up</a>
+  </ul>
+ </div>
+</nav>
+<!-- Adding 360 * to the page -->
+
+<section class="methodology">
+ <div class="row" id="method-row">
+   <div class="method-left-col method-col">
+ <h1>360 Degree teaching plan</h1>
+ <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus.</p>
+
+ <ul>
+   <li><i class="fa fa-book s-icon" aria-hidden="true"></i>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste excepturi minima architecto!</li>
+   <li><i class="fa fa-id-badge s-icon" aria-hidden="true"></i>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste excepturi minima architecto!</li>
+   <li><i class="fa fa-graduation-cap " aria-hidden="true"></i>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste excepturi minima architecto!</li>
+ </ul>
+ <div class="free-class service-btn">Book Free Class !</div>
+   </div>
+   <div class="method-right-col method-col">
+    <img src="https://cdn1.byjus.com/byjusweb/img/classes/360_learning.jpg" alt="">
+   </div>
+ </div>
+</section>
+<!-- Adding card to the page -->
+<!-- Adding the footer to the web site   -->
+<div class="container">
+ <div class="row">
+  <div class="cards" id="card-1"><h5>card</h5>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quisquam velit cum deserunt? Architecto officiis temporibus blanditiis culpa quibusdam. Corrupti vel debitis velit. Illo voluptatem corrupti impedit expedita perferendis fuga.</p>
+  <div class="free-class service-btn card-btn">Read more!</div></div>
+  <div class="cards" id="card-2"><h5>card</h5>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quisquam velit cum deserunt? Architecto officiis temporibus blanditiis culpa quibusdam. Corrupti vel debitis velit. Illo voluptatem corrupti impedit expedita perferendis fuga.</p>
+  <div class="free-class service-btn card-btn">Read more!</div></div>
+  <div class="cards" id="card-3"><h5>card</h5>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quisquam velit cum deserunt? Architecto officiis temporibus blanditiis culpa quibusdam. Corrupti vel debitis velit. Illo voluptatem corrupti impedit expedita perferendis fuga.</p>
+  <div class="free-class service-btn card-btn">Read more!</div></div>
+ </div>
+</div>
+<div class="reach-us reach-us-mille">
+ <div class="icons">
+  <i class="fa fa-facebook" aria-hidden="true"></i>
+  <i class="fa fa-twitter" aria-hidden="true"></i>
+  <i class="fa fa-instagram" aria-hidden="true"></i>
+  <i class="fa fa-university" aria-hidden="true"></i>
+ </div>
+ </div>
+<section class="footer">
+
+  <div class="container" id="foot-cont">
+    <div class="row">
+      <div class="foot-col" id="inst">
+        <div class="foot-tit">
+          Download our app
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis.</p>
+        <img src="images/app-store.png" alt="">
+        <img src="images/play-store.png" alt="">
+      </div>
+      <div class="foot-col">
+        <img src="logo.png" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur.</p>
+      </div>
+      <div class="foot-col">
+        <div class="foot-tit">
+          useful links
+        </div>
+        <ul>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="millestone.html">Achievements</a></li>
+          <li><a href="About.html">About Us</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="millestone.html">Why to Choose Us ?</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <div class="foot-tit">
+          Follow us
+        </div>
+        <ul>
+          <li><a href="https://www.facebook.com/">Facebook</a></li>
+          <li><a href="https://www.instagram.com/">Instagram</a></li>
+          <li><a href="https://www.youtube.com/">You tube</a></li>
+          <li><a href="https://www.Linkedin.com/">Linked In</a></li>
+          <li><a href="https://twiteer.com/">Twiteer</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+      <hr>
+      <h5 class="cpy">Copyright @ Karan Kumar All Right Reserved</h5>
+      <script>
+        let l = document.getElementById("right");
+        function showNav() {
+          l.style.left = "0%";
+        }
+        function hideNav() {
+          l.style.left = "200%";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,779 @@
+:root {
+  /* --blue: #1e90ff; */
+  --white: #ffffff;
+  --lightpink: rgba(242, 192, 237, 0.825);
+  --lightpurple: #d6b2fb;
+  --grad: linear-gradient(90deg, rgb(245, 162, 237) 0%, hsla(293, 93%, 68%, 1) 100%);
+  --lightpurple: #b84fce;
+  --smalltext: #373D3F;
+  --btngrad: hsla(13, 93%, 67%, 1);
+  --detailgrad: hsla(186, 33%, 94%, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* For pc only at last It will be Modified to the responsive website  */
+/* Styling the Navigation bar  For pc only */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px;
+}
+
+.right-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 9px;
+  align-items: center;
+}
+
+.right-nav ul li a {
+  text-decoration: none;
+  color: black;
+  text-transform: capitalize;
+  padding: 8px 8px;
+  box-sizing: border-box;
+  font-size: 19px;
+  transition: all .5s;
+  border-radius: 9px;
+  font-weight: 600;
+}
+
+.right-nav ul li a:active,
+.right-nav ul li a:hover {
+  background-color: var(--lightpurple);
+  color: white;
+}
+
+.btn {
+  background-color: var(--lightpurple);
+  color: var(--white);
+  transition: all .5s;
+  border-radius: 9px;
+  text-transform: capitalize;
+  padding: 8px 8px;
+  box-sizing: border-box;
+  font-size: 19px;
+  text-decoration: none;
+}
+
+.logo img {
+  width: 30%;
+  border-radius: 20%;
+}
+
+.btn:hover {
+  opacity: .4;
+}
+
+#head-btn {
+  text-align: center;
+  width: 30%;
+  margin: auto;
+}
+
+/* Adding css for the Choose us section  */
+.why-us {
+  margin-top: 20px
+}
+
+.why-us h1 {
+  text-align: center;
+}
+
+.choose-us-col {
+  flex-basis: 20%;
+  padding: 12px;
+}
+
+.choose-us-col img {
+  width: 100%;
+  padding: 12px;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.choose-us-col img:hover {
+  transform: translateY(-8px);
+}
+
+.choose-us-col p {
+  text-align: center;
+  padding: 2px;
+}
+
+/* Adding css for the head part of the page  */
+.container {
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 33px;
+}
+
+.row {
+  display: flex;
+  gap: 23px;
+  align-items: center;
+}
+
+.head-item {
+  flex-basis: 48%;
+}
+
+.head-item h1 {
+  line-height: 29px;
+}
+
+.head-item img {
+  width: 80%;
+  cursor: pointer;
+  transition: all .5s;
+  animation-name: move-up-down;
+  animation-delay: 0s;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.head-item p {
+  color: var(--smalltext);
+  text-align: left;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  padding: 12px;
+}
+
+@keyframes move-up-down {
+
+  /* 25%{
+  transform: translateY(-20px);
+ } */
+  50% {
+    transform: translateY(20px);
+  }
+}
+
+/* For the Form -cont section   */
+.form-cont {
+  margin-top: 20px;
+  padding: 13px;
+}
+
+.form-col {
+  flex-basis: 48%;
+}
+
+.form-col img {
+  width: 100%;
+}
+
+#form-row {
+  align-items: center;
+  gap: 1px;
+  padding: 3px;
+}
+
+.form-col h1 {
+  margin-top: 22px;
+  text-align: center;
+  font-size: 29px;
+  color: var(--white);
+}
+
+.right-col-form-cont {
+  background: var(--grad);
+  border-radius: 9px;
+}
+
+.right-col-form-cont p {
+  padding: 13px;
+  word-break: break-all;
+  color: var(--smalltext);
+  margin-top: 13px;
+}
+
+.form-col form input {
+  width: 80%;
+  text-align: left;
+  padding: 5px 3px;
+  outline: none;
+  color: var(--smalltext);
+  margin-top: 22px;
+  border-radius: 9px;
+
+}
+
+.form-col form {
+  text-align: center;
+}
+
+#age {
+  cursor: pointer;
+}
+
+.form-col form .submit-btn {
+  text-align: center;
+  width: 70%;
+  margin-bottom: 12px;
+  font-size: larger;
+  font-weight: 800;
+  color: var(--white);
+  background: -moz-linear-gradient(90deg, hsla(13, 93%, 67%, 1) 0%, hsla(21, 91%, 73%, 1) 100%);
+  background: var(--btngrad);
+  border-radius: 9px;
+  margin-top: 34px;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.form-col form .submit-btn:hover {
+  opacity: .4;
+}
+
+/* Testimonials  */
+.test-container {
+  margin-top: 14px;
+}
+
+.testcol {
+  flex-basis: 30%;
+  padding: 12px;
+  text-align: center;
+  border: 1px solid silver;
+  border-radius: 4px;
+  transition: all .8s;
+  box-shadow: 0 0 20px 0px #0000001a;
+  cursor: pointer;
+}
+
+.testcol p {
+  text-align: left;
+  color: #777;
+}
+
+.testcol:hover {
+  transform: translateY(-10px);
+}
+
+.test-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.testcol img {
+  width: 30%;
+  margin: 2px 0px;
+  border-radius: 50%;
+}
+
+.quote {
+  /* text-align: center; */
+  font-size: 59px;
+  font-weight: 900;
+  color: var(--lightpurple);
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* <!-- -- detaled Methodlogy --> */
+#method-row {
+  justify-content: space-around;
+  padding: 19px;
+}
+
+.method-left-col h1 {
+  text-align: center;
+  line-height: 39px;
+}
+
+.method-left-col p {
+  text-align: center;
+}
+
+.method-left-col {
+  background: var(--detailgrad);
+  border-radius: 9px;
+  padding: 13px;
+}
+
+.method-left-col ul {
+  list-style: none;
+  padding: 12px;
+  margin-top: 18px;
+}
+
+.method-left-col ul li {
+  color: var(--smalltext);
+  margin-top: 13px;
+}
+
+.method-col {
+  flex-basis: 48%;
+}
+
+.method-col img {
+  width: 100%;
+}
+
+.method-left-col ul li .fa {
+  color: var(--lightpurple);
+  font-size: 23px;
+  padding: 3px;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.free-class {
+  /* border: ; */
+  text-align: center;
+  margin: auto;
+  margin-top: 12px;
+  width: 60%;
+  color: white;
+  font-weight: 800;
+  background: var(--grad);
+  border-radius: 9px;
+  padding: 8px;
+
+}
+
+.footer {
+  color: white;
+  background-color: #000;
+}
+
+.foot-col {
+  flex-basis: 20%;
+  /* border: 2px solid firebrick */
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.foot-col img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.foot-col ul {
+  list-style: none;
+}
+
+.foot-col ul li a {
+  color: white;
+  text-decoration: none;
+  transition: all .5s;
+}
+
+.foot-col ul li a:hover {
+  color: var(--lightpurple);
+}
+
+.foot-col p {
+  font-size: 12px;
+  padding: 12px;
+  margin: 12px, 0px;
+
+}
+
+#inst img {
+  width: 48%;
+}
+
+#foot-cont {
+  width: 100%;
+}
+
+.foot-tit {
+  text-align: center;
+  font-weight: bold;
+  font-size: 19px;
+  text-transform: capitalize;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.foot-tit:hover,
+.cpy:hover {
+  color: var(--lightpurple)
+}
+
+.foot-col ul li {
+  margin-top: 8px;
+}
+
+hr {
+  color: silver;
+  /* border: 2px solid silver; */
+  width: 100%;
+}
+
+i {
+  cursor: pointer;
+}
+
+.cpy {
+  font-size: 12px;
+  color: silver;
+  font-weight: 100;
+  margin-bottom: 13px;
+  transition: all .5s;
+  text-align: center;
+}
+
+.opt {
+  display: none;
+}
+
+@media (max-width:700px) {
+  .opt {
+    display: block;
+  }
+
+  /* Media query for the nav bar  */
+  #right {
+    position: fixed;
+    background: var(--grad);
+    height: 100vh;
+    top: 0%;
+    left: 2500%;
+    z-index: 22;
+    transition: all 1s;
+    width: 100vw;
+    text-align: center;
+  }
+
+  .right-nav ul {
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 12px;
+  }
+
+  .right-nav ul li {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .right-nav ul li a {
+    color: var(--white);
+    font-size: 12px;
+  }
+
+  .right-nav ul i {
+    color: white;
+    font-weight: 800;
+    align-self: flex-start;
+    margin-top: 13px;
+  }
+
+  .fa-bars {
+    font-weight: 800;
+    font-size: 20px;
+    padding-right: 20px;
+  }
+
+  /* Adding the Queries for handling the Font and Image Size  */
+  .form-col h1,
+  .method-left-col h1 {
+    font-size: 19px;
+  }
+
+  .method-right-col {
+    text-align: center;
+  }
+
+  .method-right-col img {
+    width: 80%;
+  }
+
+  .form-col form .submit-btn {
+    font-size: 16px;
+  }
+
+  .why-us .choose-us-col {
+    text-align: center;
+  }
+
+  .why-us .choose-us-col img {
+    width: 50%;
+  }
+
+  .left-col-form-cont {
+    display: none;
+  }
+
+  .left-col-head h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+}
+
+@media (max-width:450px) {
+
+
+  .right-nav ul i {
+    color: white;
+    font-weight: 400;
+  }
+
+  .fa-bars {
+    font-weight: 800;
+  }
+
+  /* Adding the Queries for handling the Font and Image Size  */
+  .form-col h1,
+  .method-left-col h1 {
+    font-size: 13px;
+  }
+
+  .method-right-col img {
+    width: 70%;
+  }
+
+  .form-col form .submit-btn {
+    font-size: 13px;
+  }
+
+  .why-us .choose-us-col {
+    text-align: center;
+  }
+
+  .why-us .choose-us-col img {
+    width: 50%;
+  }
+
+  #head-btn {
+    font-size: 12px;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+
+  .why-us h1 {
+    font-weight: 12px;
+    font-size: 13px;
+  }
+
+  .left-col-form-cont {
+    display: none;
+  }
+
+  .left-col-head h1 {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+/* Creating the About page of the web   */
+.about-cont {
+  padding: 14px;
+  text-align: center;
+
+}
+
+.about-col p {
+  text-align: left;
+  font-size: 12px;
+  padding: 13px;
+}
+
+.about-col {
+  flex-basis: 40%;
+  text-align: center;
+}
+
+.about-col img {
+  width: 70%;
+}
+
+.about-row {
+  justify-content: space-evenly;
+
+}
+
+.box-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.reach-us {
+  background-color: rgba(37, 29, 29, 0.806);
+  color: white;
+  margin-top: 12px;
+  border-radius: 9px;
+}
+
+.icons .fa {
+  transition: all .5s;
+  margin-left: 12px;
+}
+
+.icons .fa:hover {
+  color: var(--lightpurple);
+}
+
+/* Mille Stone Page   */
+.reach-us-mille {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.main-image {
+  flex-basis: 65%;
+  text-align: center;
+  /* border: 2px solid red; */
+}
+
+.main-image img {
+  width: 50%;
+  /* border: 2px solid red; */
+}
+
+.main-image p {
+  color: var(--smalltext);
+  text-align: left;
+  padding: 12px;
+}
+
+.small-image {
+  flex-basis: 20%;
+  padding: 12px;
+}
+
+.small-image h5 {
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+#gallery {
+  justify-content: start;
+  align-items: flex-start;
+  /* border: 2px solid rebeccapurple; */
+}
+
+.small-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+
+  /* border: 2px solid red; */
+  flex-wrap: wrap;
+}
+
+.si {
+  flex-basis: 20%;
+
+}
+
+.small-image img {
+  width: 40%;
+  cursor: pointer;
+}
+
+@media (max-width:700px) {
+  .small-image {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .small-image img {
+    width: 5%;
+  }
+}
+
+@media (max-width:300px) {
+  .small-image h5 {
+    font-size: 12px;
+  }
+}
+
+/* Service Page  */
+.service-btn {
+  background: var(--btngrad);
+}
+
+.method-col ul li .fa {
+  color: white;
+  background: var(--btngrad);
+  border-radius: 50%;
+  padding: 9px;
+}
+
+/* Adding cards to  the services page  */
+.cards {
+  flex-basis: 30%;
+  border-radius: 9px;
+  /* box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
+}
+
+.cards h5 {
+  text-align: center;
+  padding: 5px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+
+}
+
+.cards p {
+  color: var(--smalltext);
+  padding: 9px;
+  text-align: left;
+  font-size: 12px;
+
+}
+
+#card-1 {
+  background: hsla(40, 94%, 74%, 1);
+}
+
+#card-2 {
+  background: var(--grad)
+}
+
+#card-3 {
+  background: hsla(191, 60%, 89%, 1);
+}
+
+.card-btn {
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+
+.service-btn {
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.service-btn:hover {
+  opacity: .5;
+}
+
+/* ended for pc completly */
+@media (max-width:400px) {
+  /* #right{
+  width: 100vw;
+  } */
+}

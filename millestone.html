@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Study Zone/MileStone</title>
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="style.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav>
+ <div class="logo" id="logo">
+  <img src="logo.png" alt="">
+ </div>
+ <i class="fa fa-bars opt" aria-hidden="true" onclick="showNav()"></i>
+ <div class="right-nav" id="right">
+  <ul>
+  <i class="fa fa-times opt" aria-hidden="true" onclick="hideNav()"></i>
+   <li><a href="index.html" id="home">Home</a></li>
+   <li><a href="about.html">About</a></li>
+   <li><a href="millestone.html">Mile Stones </a></li>
+   <li><a href="services.html">Services</a></li>
+   <a href="#" class="btn">Login</a>
+   <a href="#" class="btn">Sign Up</a>
+  </ul>
+ </div>
+</nav>
+     <!-- Adding the content to the MIlle stone Page -->
+            <!-- Adding Gallery  -->
+            <div class="row gallery-row" id="gallery">
+             <div class="main-image gallery-col">
+             <img src="faculty.webp" alt="load" id="main-img">
+             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt placeat iure ea provident distinctio, asperiores sit at saepe beatae enim amet quia quasi sequi accusamus ipsum possimus consequuntur ducimus tenetur.lorem Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptates quam ipsa, consequuntur eaque illo obcaecati repellat perferendis nobis error minima accusantium quidem qui numquam cupiditate? Doloribus consectetur inventore assumenda.</p>
+             </div>
+             <div class="small-image gallery-col">
+              <h5>Check More Stories !</h5>
+              <img src="carrrer guidence.webp" alt="" class="si">
+              <img src="leadership.webp" alt="" class="si">
+              <img src="faculty.webp" alt="" class="si">
+              <img src="images/image1.png" alt="" class="si">
+              <img src="images/gallery-4.jpg" alt="" class="si">
+              <img src="images/gallery-4.jpg" alt="" class="si">
+             </div>
+            </div>
+     <div class="reach-us reach-us-mille">
+     <div class="icons">
+      <i class="fa fa-facebook" aria-hidden="true"></i>
+      <i class="fa fa-twitter" aria-hidden="true"></i>
+      <i class="fa fa-instagram" aria-hidden="true"></i>
+      <i class="fa fa-university" aria-hidden="true"></i>
+     </div>
+     </div>
+<!-- Adding the footer to the web site   -->
+<section class="footer">
+
+  <div class="container" id="foot-cont">
+    <div class="row">
+      <div class="foot-col" id="inst">
+        <div class="foot-tit">
+          Download our app
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis.</p>
+        <img src="images/app-store.png" alt="">
+        <img src="images/play-store.png" alt="">
+      </div>
+      <div class="foot-col">
+        <img src="logo.png" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur.</p>
+      </div>
+      <div class="foot-col">
+        <div class="foot-tit">
+          useful links
+        </div>
+        <ul>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="millestone.html">Achievements</a></li>
+          <li><a href="About.html">About Us</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="millestone.html">Why to Choose Us ?</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <div class="foot-tit">
+          Follow us
+        </div>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">You tube</a></li>
+          <li><a href="#">Linked In</a></li>
+          <li><a href="#">Twiteer</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+      <hr>
+      <h5 class="cpy">Copyright @ Karan Kumar All Right Reserved</h5>
+      <script>
+        let l = document.getElementById("right");
+        function showNav() {
+          l.style.left = "0%";
+        }
+        function hideNav() {
+          l.style.left = "200%";
+        }
+        
+  let mainimg = document.getElementById("main-img");
+  let smallimg = document.getElementsByClassName("si");
+  smallimg[0].onclick = function () {
+   mainimg.src = smallimg[0].src;
+  }
+  smallimg[1].onclick = function () {
+   mainimg.src = smallimg[1].src;
+  }
+  smallimg[2].onclick = function () {
+   mainimg.src = smallimg[2].src;
+  }
+  smallimg[3].onclick = function () {
+   mainimg.src = smallimg[3].src;
+  }
+  smallimg[4].onclick = function () {
+   mainimg.src = smallimg[4].src;
+  }
+  smallimg[5].onclick = function () {
+   mainimg.src = smallimg[5].src;
+  }
+  smallimg[6].onclick = function () {
+   mainimg.src = smallimg[6].src;
+  }
+      </script>
+</body>
+</html>
